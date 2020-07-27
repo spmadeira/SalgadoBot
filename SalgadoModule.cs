@@ -63,7 +63,7 @@ namespace SalgadoBot
             }
         }
         
-        [Command("remponto")] public async Task RemovePoint([Remainder] [Summary("Quem tirar ponto")]
+        [Command("rmvponto")] public async Task RemovePoint([Remainder] [Summary("Quem tirar ponto")]
             string userName)
         {
             var service = await SalgadoService.GetInstance();
