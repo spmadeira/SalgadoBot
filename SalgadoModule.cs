@@ -87,5 +87,16 @@ namespace SalgadoBot
         {
             await ReplyAsync(Environment.GetEnvironmentVariable("discord_bot_repo")!);
         }
+
+        [Command("help")] public async Task Help()
+        {
+            var helpText = @"`Comandos:
+!leaderboard: veja quem deve mais centos
+!pontos [nome]: acusar um coleguinha de dever centos.
+!addponto [nome]: dê um ponto para um coleguinha
+!rmvponto [nome]: tire um ponto de um coleguinha
+!code: veja o código fonte`";
+            await ReplyAsync(helpText);
+        }
     }
 }
