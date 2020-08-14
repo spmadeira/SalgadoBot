@@ -44,7 +44,7 @@ namespace SalgadoBot
             await ReplyAsync(message);
         }
 
-        [RequireUserPermission(GuildPermission.Administrator)]
+        //[RequireUserPermission(GuildPermission.Administrator)]
         [Command("addponto")] public async Task AddPoint([Remainder] [Summary("Quem subir ponto")]
             string userName)
         {
@@ -65,7 +65,7 @@ namespace SalgadoBot
             }
         }
         
-        [RequireUserPermission(GuildPermission.Administrator)]
+        //[RequireUserPermission(GuildPermission.Administrator)]
         [Command("rmvponto")] public async Task RemovePoint([Remainder] [Summary("Quem tirar ponto")]
             string userName)
         {
